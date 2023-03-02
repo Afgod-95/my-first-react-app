@@ -1,0 +1,248 @@
+.Landing-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 3rem;
+}
+.Desc{
+    color: aliceblue;
+}
+.Hi{
+    color: #fff;
+}
+.Hi::before{
+    content: "";
+    width: 5rem;
+    height: 1px;
+    border-radius: 10px;
+    background:linear-gradient(rgb(6, 137, 224),rgb(3, 124, 118));
+    display: block;
+    position: absolute;
+    top: 35.5%;
+    left: 50px;
+    animation: animator 8s linear infinite;
+
+}
+@keyframes animator {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 20%;
+    }
+    100%{
+        width: 1%;
+    }
+    
+}
+.About{
+    display: flex;
+    flex-direction: column;
+}
+.imgBox{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+}
+.btns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    top: 1.5rem;
+}
+
+.btns a{
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(to right, orange, orangered);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+.btns .button{
+    width: 80px;
+    
+}
+.btns a:focus{
+    box-shadow: 2px 2px 15px rgba(37, 37, 37, 0.411);
+    background: transparent;
+}
+
+
+@media screen and (max-device-width: 1024px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .Landing-page{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0%;
+    }
+    .imgBox{
+        position: relative;
+        width: 500px;
+        height: 300px;
+    }
+    .Hi::before{
+        height: 3px;
+        top: 10.5%;
+    }
+    .About{
+        position: absolute;
+        top: 15rem;
+    }
+
+   .icons{
+    position: relative;
+    top: -20%;
+   } 
+}
+
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+    .Landing-page{
+        flex-direction: column;
+        top: 15rem;
+        width: 90%;
+    }
+
+    .imgBox{
+        position: absolute;
+        width: 450px;
+        height: 350px;
+        top: -450vh;
+    }
+    .Hi::before{
+        height: 1px;
+        top: 10.5%;
+    }
+    .About{
+        position: relative;
+        top: 8rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    span{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 13px;
+    }
+   .icons{
+    position: relative;
+    top: 20vh;
+    gap: 1rem;
+    font-size: 13px;
+   } 
+   .btns{
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+   .btns a{
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+   }
+}
+
+@media screen and (max-device-width: 550px)
+and (orientation: portrait) {
+    .Landing-page{
+        flex-direction: column;
+        top: 15rem;
+        width: 90%;
+    }
+
+    .imgBox{
+        position: absolute;
+        width: 450px;
+        height: 350px;
+        top: -450vh;
+    }
+    .Hi::before{
+        height: 1px;
+        top: 10.5%;
+    }
+    .About{
+        position: relative;
+        top: 8rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    span{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 13px;
+    }
+   .icons{
+    position: relative;
+    top: 30vh;
+   } 
+   .btns{
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+   .btns a{
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+   }
+}
+
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .imgBox{
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        top: -15em;
+    }
+    .Hi::before{
+        height: 1px;
+        top: 10.5%;
+    }
+    .About{
+        position: relative;
+        top: 2rem;
+    }
+   
+   .icons{
+    position: relative;
+    top: 20vh;
+    gap: 1rem;
+    font-size: 13px;
+   } 
+   .btns{
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+   .icons{
+    position: relative;
+    top: 55%;
+   } 
+}

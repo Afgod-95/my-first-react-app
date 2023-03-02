@@ -1,0 +1,169 @@
+.navigationHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: .5rem;
+    background: #000;
+    box-shadow: 1px 1px 10px rgba(37, 37, 37, 0.452);
+}
+.Logo{
+    background: -webkit-linear-gradient(right, orangered,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    position: relative;
+    top: -12px;
+}
+
+.Nav-menu{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.Nav-menu .links{
+    font-weight: 200;
+    font-size: .9rem;
+    color: #fff;
+    position: relative;
+    right: 2rem;
+}
+.Nav-menu .links:focus{
+    color: rgb(180, 180, 180);
+}
+.mobile-toggler{
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+/*.Nav-menu a::after{
+    position: absolute;
+    display: block;
+    content: "";
+    right: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25s ease-in-out;
+}
+.active{
+    color: blue;
+}
+.Nav-menu a:hover::after{
+    width: 100%;
+    left: 0;
+    right: auto;
+} */
+
+/*@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .navigationHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        width: fit-content;
+        padding: .5rem;
+        box-shadow: none;
+    }
+
+    .Nav-menu{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;  
+        width: 100%;
+        height: 205vh; 
+        background: #fff;
+        position: absolute;
+        z-index: 100;
+        
+    }
+    
+    .Nav-menu a{
+       color: #000;
+       position: relative;
+       left: 50%;
+       top: 10%;
+
+    }
+
+    
+    
+    
+}
+*/
+
+@media screen and (min-device-width: 320px) and (max-width: 768px){
+    .navigationHeader{
+        box-shadow: none;
+    }
+    .Logo{
+        padding-left: 5%;
+        position: relative;
+        top: -12px;
+        font-size: .9rem;
+        
+    }
+
+    .mobile-toggler{
+        display: flex;
+        position: absolute;
+        font-size: 1.5rem;
+        right: 8%;
+        z-index: 100;
+        
+    }
+    .Nav-menu, .Nav-menu .links{
+        display: none;
+    }
+
+    .Nav-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 2rem;  
+        width: 100%;
+        height: 100vh; 
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        z-index: 1;
+        animation: slideForwards .7s ease-in-out;
+        transition: 1s;
+    }
+
+    @supports (backdrop-filter: blur(1rem)){
+        .Nav-menu-mobile{
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1.2rem);
+        }
+    }
+
+    @keyframes slideForwards {
+        from{
+            right: -100%;
+        }
+        to{
+            right: 0%;
+        }  
+    }
+
+    .Nav-menu-mobile .links{
+        display: flex;
+        color: #fff;
+        margin: 0% auto;
+        width: 15%;
+        position: relative;
+        top: 10%;
+        z-index: 3;
+    }
+    
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "icon": "https://cutewallpaper.org/24x/y48kmjeub/1498118363.jpg",
+        "title": "Graphic Designing",
+        "description": "I possess the skills that enable me to create visual content using computer software and an experts in color theory, typography, layout design, and image manipulation. I also have a keen eye for detail, creativity, and an understanding of design principles. Other essential skills include communication, time management, and the ability to work collaboratively with clients and team members."
+    },
+    {
+        "id": 2,
+        "icon": "https://cdn.dribbble.com/users/1787323/screenshots/6371250/lazy_programmer_dribbble-02_4x.png?compress=1&resize=400x300",
+        "title": "Programming",
+        "description": "I'm skilled in developing software applications, web applications, and other computer programs. I possess a deep understanding of programming languages such as Java, ReactJS, Html, CSS, and Javascript. I am proficient in database management, software testing, debugging, and problem-solving. In addition possess excellent analytical skills, attention to detail, and an ability to work in a fast-paced environment."
+    },
+    {
+        "id": 3,
+        "icon": "https://cdn-icons-png.flaticon.com/512/552/552231.png",
+        "title": "Animation",
+        "description": "I am expert in creating animated content using computer software. I am skilled in traditional animation techniques, 3D modeling, and computer-generated imagery (CGI). I have an understanding of movement, timing, and storytelling, which allows them to create compelling visual narratives. Moreover possess excellent communication skills, collaboration, and time management skills. Other essential skills include attention to detail, creativity, and an ability to work in a team environment."
+    }
+]
